@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  animation: fadeIn 0.5s ease-out forwards;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background-color: #0e1116;
+  color: #f5f5f5;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  padding-top: 120px;
+}
+/* posicionamento do header, cor etc... */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 30px;
+  gap: 20px;
+  background: #15181f;
+}
+
+.nav-menu {
+  display: flex;
+  gap: 24px;
+}
+
+/* decoração do anchor/link para as paginas e transition para mudar a cor */
+.nav-menu a {
+  text-decoration: none;
+  color: #f5f5f5;
+  font-size: 0.9rem;
+  transition: color 0.2s ease;
+}
+
+/* se passar o mouse por cima muda a cor */
+.nav-menu a:hover {
+  color: #ff6b6b;
+}
+
+/* --- card do projeto--- */
+.card {
+  background-color: #101218;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  padding: 30px;
+  width: 50dvh;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+  transition:
+    transform 0.7s ease,
+    border-color 0.7s ease;
+}
+
+/* animação de borda ao passar o mouse */
+.card:hover {
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+/* texto de descrição */
+.card > span {
+  font-size: 1rem;
+  color: #f5f5f5;
+  line-height: 1.5;
+}
+
+/* estilo do botão*/
+.card a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  background-color: #1f242c;
+  color: #f5f5f5;
+  text-decoration: none;
+  padding: 12px 24px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  font-weight: bold;
+  font-size: 0.8rem;
+  transition: all 0.3s ease;
+}
+
+/* efeito de destaque em vermelho ao passar o mouse por cima*/
+.card a:hover {
+  background-color: #fa0505ad;
+  border-color: #474646;
+  color: #ffffff;
+}
+
+/* ajuste da logo do github */
+.card a img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

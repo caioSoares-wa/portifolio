@@ -1,0 +1,181 @@
+/* Reset padrão de margens do site */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* estilo padrão da pagina e set da animação de fadin da paginas */
+body {
+  animation: fadeIn 0.5s ease-out forwards;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background-color: #0e1116;
+  color: #f5f5f5;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* posicionamento do container geral */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+/* ajuste nas logos */
+.logo-linkedin {
+  width: 30px;
+  height: 30px;
+  border-radius: 20%;
+  object-fit: cover;
+}
+
+.logo-github {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.logo-twitterX {
+  width: 30px;
+  height: 30px;
+  border-radius: 10%;
+  object-fit: cover;
+}
+
+.container-contatos-logos {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+
+/* posicionamento do header, cor etc... */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 30px;
+  gap: 5px;
+  background: #15181f;
+}
+
+.nav-menu {
+  display: flex;
+  gap: 24px;
+}
+
+/* decoração do anchor/link para as paginas e transition para mudar a cor */
+.nav-menu a {
+  text-decoration: none;
+  color: #f5f5f5;
+  font-size: 0.9rem;
+  transition: color 0.2s ease;
+}
+
+/* se passar o mouse por cima muda a cor */
+.nav-menu a:hover {
+  color: #ff6b6b;
+}
+
+/* estilo do formulario */
+#contato-formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  width: 80dvw;
+  max-width: 480px;
+  background-color: #15181f;
+  padding: 28px;
+  margin-top: 80px;
+  border-radius: 5px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* estilo das divs dentro do formulario */
+.grupo-formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+/* estilo do texto como nome,email e mensagem */
+.grupo-formulario label {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #f5f5f5;
+}
+
+/* estilo das entradas de texto*/
+.grupo-formulario input,
+.grupo-formulario textarea {
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background-color: #0e1116;
+  color: #f5f5f5;
+  font-family: inherit;
+  font-size: 0.95rem;
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+/* se clicar com o mouse ele muda de cor, se clicar pra fora muda de novo para o padrão */
+.grupo-formulario input:focus,
+.grupo-formulario textarea:focus {
+  border-color: #ff6b6b;
+}
+
+/* estilo padrão do botão de submit */
+#btn-enviar {
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  background-color: #0e1116;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  transition:
+    background-color 0.2s ease,
+    transform 0.1s ease;
+}
+
+/* se passar o mouse por cima muda de cor e tem uma animaçãozinha de pulo */
+#btn-enviar:hover {
+  background-color: #24272c;
+  transform: translateY(-2px);
+}
+
+/*estilo do span de erro */
+.erro {
+  color: #ff6b6b;
+  font-size: 0.8rem;
+  min-height: 16px;
+}
+
+/*estilo do span de sucesso */
+.sucesso {
+  color: #4cd137;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* logica do  fadeIn da pagina*/
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

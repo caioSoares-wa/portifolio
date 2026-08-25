@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contato</title>
+    <link rel="stylesheet" href="Css/estilocontato.css" />
+    <link rel="icon" type="image/png" href="img/shinin.jpg" />
+  </head>
+  <body>
+    <!-- container principal -->
+    <div class="container">
+      <!-- inicio do cabeçalho -->
+      <header class="header">
+        <!-- opções de navegação -->
+        <nav class="nav-menu">
+          <a href="index.html">INICIO</a>
+          <a href="sobre-mim.html">SOBRE MIM</a>
+          <a href="formacao.html">FORMAÇÃO</a>
+          <a href="portifolio.html">PORTIFÓLIO</a>
+          <a href="contato.html">CONTATO</a>
+        </nav>
+      </header>
+
+      <!-- inicio do formulário -->
+      <form id="contato-formulario" novalidate>
+        <!-- entrada nome e span de erro -->
+        <div class="grupo-formulario">
+          <label for="nome">Nome:</label>
+          <input type="text" name="nome" id="nome" />
+          <span class="erro" id="erro-Nome"></span>
+        </div>
+
+        <!-- entrana de email e span de erro -->
+        <div class="grupo-formulario">
+          <label for="email">E-Mail:</label>
+          <input type="email" name="email" id="email" />
+          <span class="erro" id="erro-Email"></span>
+        </div>
+
+        <!-- entrada mensagem e span de erro -->
+        <div class="grupo-formulario">
+          <label for="mensagem">Mensagem:</label>
+          <textarea id="mensagem" name="mensagem" rows="5"></textarea>
+          <span class="erro" id="erro-Mensagem"></span>
+        </div>
+
+        <!-- botão de submit -->
+        <button type="submit" id="btn-enviar">Enviar Mensagem</button>
+        <!-- mensagem de sucesso -->
+        <span class="sucesso" id="mensagem-sucesso"></span>
+      </form>
+
+      <!-- div das logos de contatos -->
+      <div class="container-contatos-logos">
+        <div class="container-linkedin">
+          <a
+            href="https://www.linkedin.com/in/caio-wanderson-11a36a241/"
+            class=""
+          >
+            <div>
+              <img src="img/InBug-White.png" alt="" class="logo-linkedin" />
+            </div>
+          </a>
+        </div>
+
+        <div class="container-github">
+          <a href="https://github.com/caioSoares-wa">
+            <div>
+              <img
+                src="img/GitHub_Invertocat_White.png"
+                alt=""
+                class="logo-github"
+              />
+            </div>
+          </a>
+        </div>
+
+        <div class="container-twitterX">
+          <a href="https://x.com/caiosh1n/">
+            <div>
+              <img src="img/logo-white.png" alt="logoX" class="logo-twitterX" />
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- script do javascript para comandar as mensagens de erro e o sistema de email -->
+    <script src="js/comportamento.js"></script>
+  </body>
+</html>
