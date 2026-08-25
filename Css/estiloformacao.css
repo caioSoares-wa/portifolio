@@ -5,159 +5,171 @@
 }
 
 body {
-    animation: fadeIn 0.5s ease-out forwards;
-    font-family: 'Segoe UI', Arial, sans-serif;
-    background-color: #0e1116;
-    color: #f5f5f5;
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  animation: fadeIn 0.5s ease-out forwards;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background-color: #0e1116;
+  color: #f5f5f5;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-
 /* posicionamento do header, cor etc... */
-.header{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 16px 30px;
-    gap: 40px;
-    background: #15181f;
-    
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 30px;
+  gap: 40px;
+  background: #15181f;
 }
 
 /* posicionamento logo do header */
-.logo{
-    display: flex;
-    align-items: center;
-    gap: 12px;
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
 }
 
 /* pixels da imagem */
-.logo img{
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
+.logo img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
 }
 
-.nav-menu{
-    display: flex;
-    gap: 24px;
+.nav-menu {
+  display: flex;
+  gap: 24px;
 }
 
 /* decoração do anchor/link para as paginas e transition para mudar a cor */
 .nav-menu a {
-    text-decoration: none;
-    color: #f5f5f5;
-    font-size: 0.9rem;
-    transition: color 0.2s ease;
+  text-decoration: none;
+  color: #f5f5f5;
+  font-size: 0.9rem;
+  transition: color 0.2s ease;
 }
 
-
 /* se passar o mouse por cima muda a cor */
-.nav-menu a:hover{
-    color: #ff6b6b;
+.nav-menu a:hover {
+  color: #ff6b6b;
 }
 
 .container {
-    width: 100%;
-    max-width: 800px;
-    margin: 0 auto; /* Centraliza a página na tela */
-    padding: 120px 30px 50px; /* O 120px evita que o header fixo tampe o título */
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto; /* Centraliza a página na tela */
+  padding: 120px 30px 50px; /* O 120px evita que o header fixo tampe o título */
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
 }
 
 /* estilo do titulo h1 */
 h1 {
-    font-size: 2.5rem;
-    text-align: center;
-    letter-spacing: 2px;
-    color: #f5f5f5;
+  font-size: 2.5rem;
+  text-align: center;
+  letter-spacing: 2px;
+  color: #f5f5f5;
 }
 
 /* estilo do titulo cursos*/
 h4 {
-    font-size: 1.5rem;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1); 
-    padding-bottom: 12px;
-    margin-bottom: 24px;
-    color: #fa9090; 
+  font-size: 1.5rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding-bottom: 12px;
+  margin-bottom: 24px;
+  color: #fa9090;
 }
 
 /* mudando as divs para ser cards */
 .cards {
-    background-color: #101218; 
-    border: 1px solid rgba(255, 255, 255, 0.05);
-    border-radius: 8px;
-    padding: 24px;
-    margin-bottom: 20px;
-    transition: transform 0.2s ease, border-color 0.2s ease;
+  background-color: #101218;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  padding: 24px;
+  margin-bottom: 20px;
+  transition:
+    transform 0.2s ease,
+    border-color 0.2s ease;
 }
 
 /* quanto passar o mouse por cima das "opções" tem uma animação de pulo */
 .cards:hover {
-    transform: translateY(-1px);
-    border-color: rgba(255, 255, 255, 0.1);
+  transform: translateY(-1px);
+  border-color: rgba(255, 255, 255, 0.1);
 }
 
 /* estilo das etiquetas */
 span {
-    display: inline-block;
-    background-color: rgba(255, 255, 255, 0.1);
-    padding: 6px 8px;
-    border-radius: 3px;
-    font-size: 0.7rem;
-    font-weight: 700;
-    letter-spacing: 1px;
-    margin-bottom: 5px;
+  display: inline-block;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 6px 8px;
+  border-radius: 3px;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 5px;
 }
 
 /* ajuste da etiqueta e logo*/
 .containerUdemy-logo {
-    display: flex;
-    align-items: center;
-    gap: 12px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
 }
 
 /* remove a margem do span da Udemy (tive que pesquisar o porque )*/
 .spanUdemy {
-    margin-bottom: 0; 
+  margin-bottom: 0;
 }
 
 /* logo da udemy */
 img {
-    height: 24px; 
-    object-fit: contain;
+  height: 24px;
+  object-fit: contain;
 }
 
 /* texto dos cursos */
 p {
-    font-size: 1.1rem;
-    line-height: 1.5;
-    color: #f5f5f5;
-    margin-top: 8px;
+  font-size: 1.1rem;
+  line-height: 1.5;
+  color: #f5f5f5;
+  margin-top: 8px;
 }
 
-
-
-.rediUdemy{
-    text-decoration: none;
+.rediUdemy {
+  text-decoration: none;
 }
 
+@media (max-width: 410px) {
+  .header {
+    padding: 10px 5px;
+    justify-content: space-around;
+  }
+  .nav-menu {
+    gap: 8px;
+  }
+
+  .nav-menu a {
+    font-size: 0.75rem;
+    letter-spacing: -0.2px;
+  }
+}
 
 @keyframes fadeIn {
-    from{
-        opacity: 0;
-        transform: translateY(-10px);
-    } to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }

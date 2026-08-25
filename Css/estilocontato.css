@@ -168,6 +168,21 @@ body {
   margin-top: 10px;
 }
 
+@media (max-width: 410px) {
+  .header {
+    padding: 10px 5px;
+    justify-content: space-around;
+  }
+  .nav-menu {
+    gap: 8px;
+  }
+
+  .nav-menu a {
+    font-size: 0.75rem;
+    letter-spacing: -0.2px;
+  }
+}
+
 /* logica do  fadeIn da pagina*/
 @keyframes fadeIn {
   from {
